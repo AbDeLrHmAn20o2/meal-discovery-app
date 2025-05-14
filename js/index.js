@@ -233,7 +233,6 @@ async function getMealDetails(id) {
   loader.classList.add("d-none");
 }
 function displayMealDetails(meal) {
-  // searchContainer.innerHTML = "";
 
   let ingredients = ``;
 
@@ -282,6 +281,7 @@ function displayMealDetails(meal) {
             </div>`;
 
   document.querySelector(".info").classList.remove("d-none");
+  searchSec.classList.add("d-none")
   document.getElementById("infoWrapper").innerHTML = box;
 }
 btnClose.addEventListener("click", () => {
